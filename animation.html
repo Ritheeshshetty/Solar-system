@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* background-color: ; */
+           background:url(https://cdn.theatlantic.com/thumbor/wxitU7HiKaRDjAYlYL-hdzViXAE=/0x141:2781x1705/976x549/media/img/mt/2015/10/Cygnus_v3_BandW/original.jpg) center/cover;
+        }
+        
+        .merqury{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: url(./merqury11.png)center/contain;
+            animation: demo 10s infinite;
+            position: absolute;           
+            z-index: 1;
+        }
+        .venus{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background: url(./venus1.png)center/contain;
+            animation: demo 20s infinite;
+            position: absolute;           
+            z-index: 2;
+        }
+        .earth{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: url(https://www.freepnglogos.com/uploads/earth-png/earth-the-dead-space-wiki-dead-space-dead-space-23.png)center/contain;
+            animation: demo 30s infinite;
+            position: absolute;           
+            z-index: 3;
+        }
+        .mars{
+            height: 50px;
+            width: 50px;
+            /* border-radius: 50%; */
+            background: url(./mars1.png)center/cover;
+            animation: demo 40s infinite;
+            position: absolute;           
+            z-index: 4;
+        }
+        .jupiter{
+            height: 900px;
+            width: 900px;
+            /* border: solid; */
+            background:url(https://upload.wikimedia.org/wikipedia/commons/e/ed/3D_Jupiter.png?20150725174534)center/cover;
+            box-shadow: 0px 0px 20px 30px;
+            border-radius: 60%;
+            animation: demo 70s infinite; 
+            position: absolute;           
+            z-index: 5;
+            /* animation-name: demo ;             */
+            /* animation-duration: 20s;
+            animation-delay: 2s; */
+            transition: all;
+        }
+        .saturn{
+            height: 1500px;
+            width: 1500px;
+            background:url(./saturn.png)center/contain no-repeat;
+            animation: saturn 100s infinite; 
+            position: absolute;           
+            z-index: 6;
+            transition: all;
+        }
+        .uranus{
+            height: 700px;
+            width: 700px;
+            background:url(./uranus.png)center/cover no-repeat;
+            animation: demo 150s infinite; 
+            border-radius: 50%;
+            position: absolute;           
+            z-index: 7;
+            transition: all;
+        }
+        .neptune{
+            height: 500px;
+            width: 500px;
+            background:url(./neptune.png)center/cover no-repeat;
+            animation: demo 200s infinite; 
+            border-radius: 50%;
+            position: absolute;           
+            z-index: 8;
+            transition: all;
+        }
+    
+
+        .sun{
+            height: 3600px;
+            width: 3600px;
+            border-radius: 50%;
+            background: url(./sun1.png)left/cover;
+            box-shadow: 0px 0px 20px 30px;
+            /* margin-left: 40%; */
+            position: absolute;
+            z-index: 0;
+            animation: sun 350s infinite;
+            transition: background 5s 2s
+        }
+        /* @keyframes sun {
+            0%{
+                transform:  rotateX(360deg);
+            }
+           
+            100%{
+                transform:  rotate(180deg);
+            } */
+        /* @keyframes demo  {
+            0%{
+                transform: translateX(7000px) translateY(2000px) rotateX(360deg);
+            }
+           
+            100%{
+                transform: translateX(-1000px) translateY(3000px) rotate(180deg);
+            }
+            
+        } */
+        @keyframes demo  {
+            0%{
+                transform: translateX(7000px) translateY(3000px) rotateX(360deg);
+            }
+           
+            100%{
+                transform: translateX(-1000px) translateY(1500px) rotate(180deg);
+            }
+            
+        }
+        @keyframes saturn  {
+            0%{
+                transform: translateX(7000px) translateY(900px) rotate(-20deg);
+            }
+           
+            100%{
+                transform: translateX(-1000px) translateY(800px) rotate(20deg);
+            }
+            
+        }
+        /* @keyframes saturn  {
+            0%{
+                transform: translateX(7000px) translateY(1000px) rotate(-20deg);
+            }
+           
+            100%{
+                transform: translateX(-1000px) translateY(3000px) rotate(20deg);
+            }
+            
+        } */
+        @keyframes sun {
+            100%{
+                transform: rotateZ(360deg);
+                
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="jupiter"></div>
+    <div class="sun"></div>
+    <div class="merqury"></div>
+    <div class="venus"></div>
+    <div class="earth"></div>
+    <div class="mars"></div>
+    <div class="saturn"></div>
+    <div class="uranus"></div>
+    <div class="neptune"></div>
+</body>
+</html>
